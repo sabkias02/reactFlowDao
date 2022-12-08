@@ -100,75 +100,60 @@ function SearchBar({ placeholder, data }) {
             className="image-4"
           />
         </a>
-        <div className="auto-search-wrapper">
-          <div className="form-block w-form">
+        <div class="auto-search-wrapper">
+          <div class="form-block w-form">
             <form
               id="search-form"
               name="email-form"
               data-name="Email Form"
               method="get"
-              className="form"
+              class="form"
             >
-              <div className="inputs">
-                <input
-                  type="text"
-                  className="search-box w-input"
-                  autofocus="true"
-                  name="Search"
-                  data-name="Search"
-                  placeholder={placeholder}
-                  id="Search"
-                  required=""
-                  onChange={handleFilter}
-                />
-
-                <Icon.Search className="searchIcon" />
-              </div>
-              <div className="search-result-wrapper">
-                {filteredData.slice(0, 15).map((value, key) => {
-                  return (
-                    <a
-                      className="category-link w-inline-block"
-                      href={value.link}
-                      target="_blank"
-                    >
-                      <div className="category-text">{value.title}</div>
-                    </a>
-                  );
-                })}
-                {/* <a href="#" className="category-link w-inline-block">
+              <input
+                type="text"
+                class="search-box w-input"
+                autofocus="true"
+                maxlength="256"
+                name="Search"
+                data-name="Search"
+                placeholder="Search"
+                id="Search"
+                required=""
+              />
+              <div class="search-result-wrapper">
+                <a href="#" class="category-link w-inline-block">
                   <img
                     src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
                     loading="lazy"
                     alt=""
-                    className="image-2"
+                    class="image-2"
                   />
-                  <div className="category-text">Here goes category text</div>
+                  <div class="category-text">Here goes category text</div>
                 </a>
-                <a href="#" className="category-link w-inline-block">
+                <a href="#" class="category-link w-inline-block">
                   <img
                     src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
                     loading="lazy"
                     alt=""
-                    className="image-2"
+                    class="image-2"
                   />
-                  <div className="category-text">Here goes category text</div>
+                  <div class="category-text">Here goes category text</div>
                 </a>
-                <a href="#" className="category-link w-inline-block">
+                <a href="#" class="category-link w-inline-block">
                   <img
                     src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
                     loading="lazy"
                     alt=""
-                    className="image-2"
+                    class="image-2"
                   />
-                  <div className="category-text">Here goes category text</div>
-                </a> */}
+                  <div class="category-text">Here goes category text</div>
+                </a>
               </div>
             </form>
-            <div className="w-form-done">
+            <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
-            <div className="w-form-fail">
+            <div class="w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
           </div>
